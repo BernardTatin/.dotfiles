@@ -43,4 +43,10 @@ autocmd FileType make set noexpandtab
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <F3> :NERDTreeFind<CR>
 let NERDTreeIgnore=['\~$', '\.git$', '\.pyc$', '__pycache__']
+autocmd vimenter * NERDTree
 
+if has("gui_running")
+    source ~/.dotfiles/.vimrc.gui
+else
+    source ~/.dotfiles/.vimrc.nogui
+endif
