@@ -1,12 +1,23 @@
 " Modeline and Notes {
 " vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
 " }
-
-
+"
 let g:vimspectrMuteLineNr = 'on'
 let g:vimspectrLineNr = 'off'
-let g:vimspectrMuteStatusLine = 'on'
-let g:vimspectrItalicComment = 'on'
+" let g:vimspectrMuteStatusLine = 'on'
+" let g:vimspectrItalicComment = 'on'
 colorscheme vimspectr150-dark
-"set background=dark
 
+highlight Comment gui=bold,italic guifg=#54af54
+highlight String gui=bold guifg=#44dd44
+highlight Statement gui=bold guifg=#dd4444
+highlight Conditional gui=bold guifg=#dd44d4
+highlight Reapeat gui=bold,italic guifg=#dd44d4
+highlight Operator gui=bold guifg=#dd4444
+highlight Keyword gui=bold,italic guifg=#ddd444
+highlight Identifier gui=italic guifg=#dd4444
+
+
+set background=dark
+
+highlight CursorLine   cterm=NONE ctermbg=233 ctermfg=NONE guibg=darkred guifg=white

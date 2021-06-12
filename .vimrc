@@ -45,6 +45,7 @@ nnoremap <F3> :NERDTreeFind<CR>
 let NERDTreeIgnore=['\~$', '\.git$', '\.pyc$', '__pycache__']
 autocmd vimenter * NERDTree
 
+source ~/.dotfiles/.vimrc.airline
 if has("gui_running")
     source ~/.dotfiles/.vimrc.gui
 else
